@@ -1,0 +1,199 @@
+/* Estilos específicos para la interfaz */
+/* Header styles */
+.headerWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+/* Content styles */
+/* Section and card styles */
+.section {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+}
+
+.cardTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+/* Address and balance styles */
+.label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.address {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  word-break: break-all;
+  margin-bottom: 1rem;
+  font-family: monospace;
+  background: var(--light-gray);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.balanceSection {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--light-gray);
+}
+
+.balance {
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+/* Input styles */
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  background: white;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.1);
+}
+
+.currentGreeting {
+  color: #1565c0;
+  font-weight: bold;
+  background-color: rgb(231, 233, 250);
+  padding: 10px;
+}
+
+/* Error message styles */
+.errorMessage {
+  background: #ffebee;
+  border: 1px solid #f44336;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  color: #c62828;
+}
+
+.networkInfo {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #d32f2f;
+}
+
+/* Button styles */
+.signButton {
+  background: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.signButton:hover {
+  background: #1565c0;
+}
+
+.buttonDisabled {
+  background: #ccc !important;
+  cursor: not-allowed !important;
+}
+
+.buttonDisabled:hover {
+  background: #ccc !important;
+}
+
+/* Signature display styles */
+.signatureSection {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--light-gray);
+}
+
+.signature {
+  background: var(--light-gray);
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.75rem;
+  word-break: break-all;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+.sign-button {
+  background: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sign-button:hover {
+  background: #1565c0;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5vh;
+}
+
+.title {
+  font-size: clamp(2rem, 8vw, 80px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.componentsTitle {
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.components {
+  list-style-type: disc;
+  margin-top: 0.75rem;
+}
+
+.components a:hover {
+  text-decoration: underline;
+}
